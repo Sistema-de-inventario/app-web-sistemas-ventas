@@ -1,0 +1,145 @@
+﻿* {
+    font-family: Arial;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+header {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+/*
+	Este segmento es para todos los elementos que se encuentran dentro de la
+	etiqueta llamaada nav
+	si la etiquea se llama <div id="nav"> se escribe #nav
+*/
+nav {
+    display: flex;
+    position: sticky;
+}
+    /*
+	este segmento es para todos las etiquetas ul
+            <nav>
+				<ul>
+					<li><a href="Default.aspx">Inicio</a></li>
+     				<li><a href="Servicios.aspx">Servicios</a></li>
+					<li><a href="Nosotros.aspx">Nosotros</a></li>
+					<li><a href="Galeria.aspx">Galeria</a></li>
+					<li><a href="Contacto.aspx">Contacto</a></li>
+    			</ul>
+			</nav>
+*/
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    /*
+	este  segmento corresponde a todos los ul y li directos de nav
+         <ul>
+			  <li><a href="Default.aspx">Inicio</a></li>
+*/
+    nav > ul > li {
+        float: left;
+    }
+
+    /*
+	esto corresponte a los elementos a que estan dentro del li
+
+
+*/
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 10px 20px;
+    }
+        /*
+	esto segmento es cuando se pasa el mouse sobre los ul li
+*/
+        nav ul li a:hover {
+            max-width: 100px;
+            background: #3669a3;
+        }
+
+    nav > ul > li:hover div {
+        display: table;
+    }
+
+    /*Submenu*/
+    nav ul li div {
+        width: 150px;
+        position: absolute;
+        left: 0;
+        background: #ccc;
+        display: none;
+    }
+
+        nav ul li div ul {
+            width: 20%;
+            display: table-cell;
+            border-right: 1px solid rgba(255,255,255,.5);
+            box-sizing: border-box;
+        }
+
+            nav ul li div ul:last-child {
+                border: none;
+            }
+
+            nav ul li div ul .titulo {
+                background: #000;
+                color: #fff;
+            }
+
+                nav ul li div ul .titulo a {
+                    color: #fff;
+                    padding: 10px 20px;
+                }
+
+.titulo.azul {
+    background: #3498db;
+}
+
+nav ul li div ul .titulo a:hover {
+    background: none;
+}
+
+nav ul li div ul li a {
+    color: #000;
+}
+
+    nav ul li div ul li a:hover {
+        color: #fff;
+    }
+
+#footer {
+    background-color: dimgrey;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+    #footer span {
+        padding-left: 40px;
+    }
+
+
+
+h1 {
+    margin-top: 30%;
+    text-align: center;
+}
+
+b {
+    color: green;
+}
