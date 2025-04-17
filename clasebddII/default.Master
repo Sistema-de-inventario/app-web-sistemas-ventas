@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.Master.cs" Inherits="clasebddII.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="styles/form1.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="/">Menu</a>
+                <div>
+                    <ul>
+                        <li><a href="Pruebadetabla.aspx">Pruebadetabla</a></li>
+                        <li><a href="EstudianteForm1.aspx">AgregarMateria</a></li>
+                        <li><a href="DepartamentoForm1.aspx">AgregarDepartamento</a></li>
+                        <li><a href="AlumnosForm.aspx">AgregarAlumnos</a></li>
+                        <li><a href="PacinteForm1.aspx">AgregarPaciente</a></li>
+                        <li><a href="Galeria.aspx">Ventas</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li><a href="Default.aspx">Inicio</a></li>
+            <li><a href="Nosotros.aspx">Nosotros</a></li>
+            <li><a href="Galeria.aspx">Ventas</a></li>
+            <li><a href="Contacto.aspx">Contacto</a></li>
+            <li><a href="Servicios.aspx">Servicios</a></li>
+            <li><a href="Pruebadetabla.aspx">Pruebadetabla</a></li>
+            <li><a href="EstudianteForm1.aspx">AgregarMateria</a></li>
+            <li><a href="DepartamentoForm1.aspx">AgregarDepartamento</a></li>
+            <li><a href="AlumnosForm.aspx">AgregarAlumnos</a></li>
+            <li><a href="PacinteForm1.aspx">AgregarPaciente</a></li>
+        </ul>
+    </header>
+    <main>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    </main>
+    <footer id="footer">
+        <span>uni@edu.com</span><br />
+        <span>Whatsapp +505 7506-0616</span><br />
+        <span>www.uni.edu.ni</span>
+    </footer>
+
+</body>
+</html>
